@@ -37,8 +37,13 @@ int main() {
     bible_content[file_size] = '\0'; // Adiciona o terminador nulo
 
     // Exibe o início do conteúdo (para evitar imprimir tudo de uma vez)
-    printf("Início do conteúdo da Bíblia:\n");
+    /*printf("Início do conteúdo da Bíblia:\n");
     printf("%.1000s\n", bible_content); // Mostra os primeiros 1000 caracteres
+    */
+
+    // Exibe todo o conteúdo da Bíblia
+    printf("Conteúdo completo da Bíblia:\n");
+    printf("%s\n", bible_content); // Mostra todo o conteúdo
 
     // Fecha o arquivo
     fclose(file);
